@@ -1,0 +1,2369 @@
+{
+  "type": "questmarkVMState",
+  "stack": [],
+  "context": {},
+  "programList": [
+    {
+      "type": "push-number-instruction",
+      "value": 0
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "asked_about_glowy_bits"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 0
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "cars_not_spaceships"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 0
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "know_about_cheese"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 0
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "know_alien_name"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 0
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 0
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "bad_details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "init"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Greetings, Human! Glad you've finally woken up! You banged your head quite badly there and we were worried that your central processing unit was severely damaged, but it seems that you're fine enough to open your eyes! Wonderful. How do you feel?\n\n"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__0"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Uuuuh... \"central processing unit\"?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__0"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Oh! Right, sorry. \"brain\" you call it, I think. Funny word. Sounds almost fake, if you ask me."
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "init__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__1"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Hey! What are those glowy bits inside you?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__1"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "asked_about_glowy_bits"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Ah, those are a private matter to us. Please don't ask about our glowy bits ever again, thanks."
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "init__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "What happened?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "what_happen"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "init__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getResponse"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Well, we were zipping around space in our awesome spaceship, when we randomly stumbled upon your nice planet.\r\nOur pilot figured it'd be great to land on your world, and we did!\r\nOr, well, we tried to.\r\nSee, the thing is, our spaceship is rather difficult to control in atmospheres as thick as around your world.\r\n..and... well...\r\nWe happened to accidentally veer widely off course and land RIGHT on top of your parked spaceship.\r\nSorry about that!\n\n"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 0
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "cars_not_spaceships"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "eq"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jgz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Err... Spaceship? I don't have a spaceship. You mean my car?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "cars_not_spaceships"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "\"Car\"? Is that what you call spaceships?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "what_happen__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "cars_not_spaceships"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "eq"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jgz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "No; cars are something different entirely. They're on wheels. We don't have spaceships; not really at least."
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 2
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "cars_not_spaceships"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "You don't have spaceships!? Wow! How do you people even get to space?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "what_happen__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 2
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "cars_not_spaceships"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "eq"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jgz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "We don't go to space. Well, not really. Most of us don't. Some do. It's complicated."
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Oh, I see this bothers you.\r\n"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "asked_about_glowy_bits"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jgz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "\r\nJust like our glowy bits bother us when you ask about it.\r\n"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "\r\nWe won't mention cars again. Sorry."
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "now_what"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "what_happen__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getResponse"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__2"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "So, who are you?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__2"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "know_alien_name"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "We are the Humsters. We're intergalactical space travellers! Awesome, huh?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "now_what__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__3"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "know_alien_name"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "eq"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "know_about_cheese"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 0
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "eq"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "and"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jgz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "\"Humsters\"? That's a bit of a weird name. Sounds familiar."
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__3"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Yeah, some other humanoid-like creature gave it to us. We don't really know why."
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "now_what__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__4"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "know_alien_name"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "eq"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "know_about_cheese"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "eq"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "and"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jgz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Oh, no. You're called \"Humsters\" because you're like Hamsters and like cheese!?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__4"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Huh? \"Hamsters\"? That name sounds just like ours... What are \"Hamsters\"? Are they also intergalactical space travellers!? We'd love to get to meet more advanced species that also travel across space!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "now_what__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__5"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "What are you doing in our solar system?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__5"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "know_about_cheese"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "We're just travelling and looking for cheese."
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "now_what__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__6"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "know_about_cheese"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jgz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Cheese?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__6"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Yeah, we love cheese!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "now_what__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "I have had enough. Goodbye!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Goodbye, human!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "exit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "now_what__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getResponse"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Hamsters are AWESOME"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Wow, they sound amazing!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "awesome_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "about_hamsters__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Hamsters aren't particularly awesome"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "bad_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "about_hamsters__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Oh, look at my watch, it's time to go. Goodbye!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "What is a watch?\r\nOh... You are already gone.\r\nWell, goodbye then."
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "exit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "about_hamsters__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getResponse"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Can you tell us more about hamsters please?\n\n"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__7"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Hamsters have soft hair"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__7"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "We have soft hair!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "awesome_hamsters__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__8"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Hamsters have cute eyes"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__8"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "We have cute eyes!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "awesome_hamsters__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__9"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Hamsters have a fuzzy tail"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__9"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "We have a fuzzy tail!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "awesome_hamsters__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__10"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 3
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "eq"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jgz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Hamsters are great at running in wheels"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__10"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "WE ARE GREAT AT RUNNING IN WHEELS!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Wow, Human! It seems that we just discovered something AWESOME."
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "WE.\r\nARE.\r\nHAMSTERS!\r\nNot Humsters!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Wow!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "humsters_are_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "awesome_hamsters__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getResponse"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__11"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Hamsters smell"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__11"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "bad_details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "bad_details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Are you sure about this?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "bad_hamsters__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__12"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Hamsters poop"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__12"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "bad_details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "bad_details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Are you sure about this?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "bad_hamsters__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__13"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Hamsters make lots of noise"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__13"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "bad_details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "bad_details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Are you sure about this?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "bad_hamsters__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__14"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "hasContext"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "bad_details_about_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getContext"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 3
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "eq"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jgz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Hmm, you're right, I might be wrong about hamsters. Now they actually sound pretty awesome"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 1
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "__once__14"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "setContext"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Wow, I'm sure!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "awesome_hamsters"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "bad_hamsters__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getResponse"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Wow, that's amazing."
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Sure is! I'm glad we managed to figure that out, Human!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Now, it seems that it is time for us to run around in a hamster wheel."
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Goodbye, human!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "goodbye"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "humsters_are_hamsters__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getResponse"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Goodbye, humsters!"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "exit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "goodbye__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "getResponse"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "exit"
+    }
+  ],
+  "labelMap": {
+    "init": 20,
+    "init__options": 22,
+    "what_happen": 76,
+    "what_happen__options": 78,
+    "now_what": 151,
+    "now_what__options": 151,
+    "about_hamsters": 297,
+    "about_hamsters__options": 297,
+    "awesome_hamsters": 335,
+    "awesome_hamsters__options": 337,
+    "bad_hamsters": 448,
+    "bad_hamsters__options": 448,
+    "humsters_are_hamsters": 553,
+    "humsters_are_hamsters__options": 553,
+    "goodbye": 572,
+    "goodbye__options": 572
+  },
+  "programCounter": 0,
+  "exit": false,
+  "pause": false,
+  "children": []
+}

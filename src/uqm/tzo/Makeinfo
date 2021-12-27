@@ -1,0 +1,3 @@
+uqm_SUBDIRS="thirdparty"
+uqm_CFILES="tzo.c"
+uqm_HFILES="tzo.h json_ez.h"

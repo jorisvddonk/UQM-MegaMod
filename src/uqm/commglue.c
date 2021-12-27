@@ -342,7 +342,7 @@ init_race (CONVERSATION comm_id)
 		case SLYLANDRO_CONVERSATION:
 			return init_slyland_comm ();
 		case SLYLANDRO_HOME_CONVERSATION:
-			return init_slylandro_comm ();
+			return init_slylandro_comm_tzo ();
 		case SPATHI_CONVERSATION:
 			if (!(GET_GAME_STATE (GLOBAL_FLAGS_AND_DATA) & (1 << 7)))
 				return init_spathi_comm ();
