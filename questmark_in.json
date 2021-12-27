@@ -85,7 +85,39 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Greetings, Human! Glad you've finally woken up! You banged your head quite badly there and we were worried that your central processing unit was severely damaged, but it seems that you're fine enough to open your eyes! Wonderful. How do you feel?\n\n"
+      "value": "Greetings, captain "
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "_getCaptainName"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": " of the starship "
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "_getShipName"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "! Glad you've finally woken up! You banged your head quite badly there and we were worried that your central processing unit was severely damaged, but it seems that you're fine enough to open your eyes! Wonderful. How do you feel?\n\n"
     },
     {
       "type": "invoke-function-instruction",
@@ -309,7 +341,7 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Well, we were zipping around space in our awesome spaceship, when we randomly stumbled upon your nice planet.\r\nOur pilot figured it'd be great to land on your world, and we did!\r\nOr, well, we tried to.\r\nSee, the thing is, our spaceship is rather difficult to control in atmospheres as thick as around your world.\r\n..and... well...\r\nWe happened to accidentally veer widely off course and land RIGHT on top of your parked spaceship.\r\nSorry about that!\n\n"
+      "value": "Well, we were zipping around space in our awesome spaceship, when we randomly stumbled upon your nice planet.\nOur pilot figured it'd be great to land on your world, and we did!\nOr, well, we tried to.\nSee, the thing is, our spaceship is rather difficult to control in atmospheres as thick as around your world.\n..and... well...\nWe happened to accidentally veer widely off course and land RIGHT on top of your parked spaceship.\nSorry about that!\n\n"
     },
     {
       "type": "invoke-function-instruction",
@@ -529,7 +561,7 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Oh, I see this bothers you.\r\n"
+      "value": "Oh, I see this bothers you.\n"
     },
     {
       "type": "invoke-function-instruction",
@@ -553,7 +585,7 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "\r\nJust like our glowy bits bother us when you ask about it.\r\n"
+      "value": "\nJust like our glowy bits bother us when you ask about it.\n"
     },
     {
       "type": "invoke-function-instruction",
@@ -565,7 +597,7 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "\r\nWe won't mention cars again. Sorry."
+      "value": "\nWe won't mention cars again. Sorry."
     },
     {
       "type": "invoke-function-instruction",
@@ -1309,7 +1341,7 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "What is a watch?\r\nOh... You are already gone.\r\nWell, goodbye then."
+      "value": "What is a watch?\nOh... You are already gone.\nWell, goodbye then."
     },
     {
       "type": "invoke-function-instruction",
@@ -1741,7 +1773,7 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "WE.\r\nARE.\r\nHAMSTERS!\r\nNot Humsters!"
+      "value": "WE.\nARE.\nHAMSTERS!\nNot Humsters!"
     },
     {
       "type": "invoke-function-instruction",
@@ -2346,21 +2378,21 @@
   ],
   "labelMap": {
     "init": 20,
-    "init__options": 22,
-    "what_happen": 76,
-    "what_happen__options": 78,
-    "now_what": 151,
-    "now_what__options": 151,
-    "about_hamsters": 297,
-    "about_hamsters__options": 297,
-    "awesome_hamsters": 335,
-    "awesome_hamsters__options": 337,
-    "bad_hamsters": 448,
-    "bad_hamsters__options": 448,
-    "humsters_are_hamsters": 553,
-    "humsters_are_hamsters__options": 553,
-    "goodbye": 572,
-    "goodbye__options": 572
+    "init__options": 30,
+    "what_happen": 84,
+    "what_happen__options": 86,
+    "now_what": 159,
+    "now_what__options": 159,
+    "about_hamsters": 305,
+    "about_hamsters__options": 305,
+    "awesome_hamsters": 343,
+    "awesome_hamsters__options": 345,
+    "bad_hamsters": 456,
+    "bad_hamsters__options": 456,
+    "humsters_are_hamsters": 561,
+    "humsters_are_hamsters__options": 561,
+    "goodbye": 580,
+    "goodbye__options": 580
   },
   "programCounter": 0,
   "exit": false,

@@ -5,6 +5,7 @@
 #include "uqm/comm.h"
 #include "uqm/commglue.h"
 #include "uqm/resinst.h"
+#include "uqm/globdata.h"
 
 static TzoVM *vm;
 
@@ -29,6 +30,16 @@ void response(TzoVM *vm)
 	int pc = a.number_value;
 	char *str = asString(b);
 	DoResponsePhrase(pc, &ResponseHandler, str);
+}
+
+void getCaptainName(TzoVM *vm)
+{
+	_push(vm, *makeString(GLOBAL_SIS (CommanderName)));
+}
+
+void getShipName(TzoVM *vm)
+{
+	_push(vm, *makeString(GLOBAL_SIS (ShipName)));
 }
 
 static void
@@ -63,7 +74,9 @@ replaceWithQuestMarkConversation (LOCDATA *retval)
 	registerForeignFunction(vm, "emit", &emit);
 	registerForeignFunction(vm, "response", &response);
 	registerForeignFunction(vm, "getResponse", &getresponse);
-	struct json_value_s *root = loadFileGetJSON(vm, "test.json"); // TODO: load via generic package file loading system
+	registerForeignFunction(vm, "_getCaptainName", &getCaptainName);
+	registerForeignFunction(vm, "_getShipName", &getShipName);
+	struct json_value_s *root = loadFileGetJSON(vm, "questmark_in.json"); // TODO: load via generic package file loading system
 	struct json_object_s *rootObj = json_value_as_object(root);
 	struct json_array_s *inputProgram = get_object_key_as_array(rootObj, "programList");
 	struct json_object_s *labelMap = get_object_key_as_object(rootObj, "labelMap");
