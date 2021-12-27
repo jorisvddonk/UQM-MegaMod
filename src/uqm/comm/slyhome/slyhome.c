@@ -23,11 +23,6 @@
 #include "uqm/lua/luacomm.h"
 #include "uqm/gameev.h"
 
-#include "uqm/tzo/tzo.h"
-#include "uqm/tzo/json_ez.h"
-
-static TzoVM *vm;
-
 static LOCDATA slylandro_desc =
 {
 	SLYLANDRO_HOME_CONVERSATION, /* AlienConv */
@@ -842,25 +837,6 @@ HomeWorld (RESPONSE_REF R)
 }
 
 static void
-ResponseHandler (RESPONSE_REF R)
-{
-	_push(vm, *makeNumber(R));
-	char* asd = "\n";
-	char* clip = "MISSING.ogg";
-	SpliceTrack(clip, asd, NULL, NULL);
-	tzo_run(vm);
-}
-
-static void
-Intro2 (void)
-{
-	char* asd = "\n";
-	char* clip = "MISSING.ogg";
-	SpliceTrack(clip, asd, NULL, NULL);
-	tzo_run(vm);
-}
-
-static void
 Intro (void)
 {
 	BYTE NumVisits;
@@ -908,70 +884,6 @@ static void
 post_slylandro_enc (void)
 {
 	// nothing defined so far
-}
-
-void emit(TzoVM *vm)
-{
-	char *str = asString(_pop(vm));
-	printf("%s ", str);
-	char* clip = "MISSING.ogg";
-	SpliceTrack(clip, str, NULL, NULL);
-}
-
-void getresponse(TzoVM *vm)
-{
-	tzo_pause(vm);
-	// actual response handling done by main game engine!
-}
-
-void response(TzoVM *vm)
-{
-	Value a = _pop(vm); // number
-	Value b = _pop(vm); // string
-	int pc = a.number_value;
-	char *str = asString(b);
-	DoResponsePhrase(pc, &ResponseHandler, str);
-}
-
-LOCDATA*
-init_slylandro_comm_tzo (void)
-{
-	LOCDATA *retval;
-	vm = createTzoVM();
-	initRuntime(vm);
-	registerForeignFunction(vm, "emit", &emit);
-	registerForeignFunction(vm, "response", &response);
-	registerForeignFunction(vm, "getResponse", &getresponse);
-	struct json_value_s *root = loadFileGetJSON(vm, "test.json"); // TODO: load via generic package file loading system
-	struct json_object_s *rootObj = json_value_as_object(root);
-	struct json_array_s *inputProgram = get_object_key_as_array(rootObj, "programList");
-	struct json_object_s *labelMap = get_object_key_as_object(rootObj, "labelMap");
-	if (labelMap != NULL)
-	{
-		initLabelMapFromJSONObject(vm, labelMap);
-	}
-	initProgramListFromJSONArray(vm, inputProgram);
-
-
-	if (IS_HD)
-		slylandro_desc.AlienAmbientArray[0].AnimFlags |= ANIM_DISABLED;
-
-	slylandro_desc.init_encounter_func = Intro2;
-	slylandro_desc.post_encounter_func = post_slylandro_enc;
-	slylandro_desc.uninit_encounter_func = uninit_slylandro;
-
-	luaUqm_comm_init (NULL, NULL_RESOURCE);
-			// Initialise Lua for string interpolation. This will be
-			// generalised in the future.
-
-	slylandro_desc.AlienTextBaseline.x = TEXT_X_OFFS + (SIS_TEXT_WIDTH >> 1);
-	slylandro_desc.AlienTextBaseline.y = 0;
-	slylandro_desc.AlienTextWidth = SIS_TEXT_WIDTH;
-
-	setSegue (Segue_peace);
-	retval = &slylandro_desc;
-
-	return (retval);
 }
 
 LOCDATA*

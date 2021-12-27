@@ -1,3 +1,3 @@
 uqm_SUBDIRS="thirdparty"
-uqm_CFILES="tzo.c"
-uqm_HFILES="tzo.h json_ez.h"
+uqm_CFILES="tzo.c uqm-questmark.c"
+uqm_HFILES="tzo.h json_ez.h uqm-questmark.h"

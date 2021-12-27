@@ -109,7 +109,6 @@ extern LOCDATA* init_shofixti_comm (void);
 extern LOCDATA* init_slyland_comm (void);
 
 extern LOCDATA* init_slylandro_comm (void);
-extern LOCDATA* init_slylandro_comm_tzo (void);
 
 extern LOCDATA* init_spahome_comm (void);
 

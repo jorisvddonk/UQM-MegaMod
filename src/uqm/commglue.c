@@ -29,6 +29,8 @@
 #include <stddef.h>
 #include <assert.h>
 
+#include "uqm/tzo/uqm-questmark.h"
+
 static int NPCNumberPhrase (int number, const char *fmt, UNICODE **ptrack);
 
 // The CallbackFunction is queued and executes synchronously
@@ -342,7 +344,7 @@ init_race (CONVERSATION comm_id)
 		case SLYLANDRO_CONVERSATION:
 			return init_slyland_comm ();
 		case SLYLANDRO_HOME_CONVERSATION:
-			return init_slylandro_comm_tzo ();
+			return replaceWithQuestMarkConversation(init_slylandro_comm ());
 		case SPATHI_CONVERSATION:
 			if (!(GET_GAME_STATE (GLOBAL_FLAGS_AND_DATA) & (1 << 7)))
 				return init_spathi_comm ();
