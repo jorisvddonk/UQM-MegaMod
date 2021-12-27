@@ -16,9 +16,16 @@
       }
     }
 
+# __doc
+
+```comment
+Compile with:
+npx questmark --input questmark_in.md --output questmark_in.json --no-run
+```
+
 # init
 
-Greetings, captain `_getCaptainName emit` of the starship `_getShipName emit`! Glad you've finally woken up! You banged your head quite badly there and we were worried that your central processing unit was severely damaged, but it seems that you're fine enough to open your eyes! Wonderful. How do you feel?
+Greetings, captain `getCaptainName emit` of the starship `getShipName emit`! Glad you've finally woken up! You banged your head quite badly there and we were worried that your central processing unit was severely damaged, but it seems that you're fine enough to open your eyes! Wonderful. How do you feel?
 
 * `@once` Uuuuh... "central processing unit"?
 

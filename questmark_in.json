@@ -84,6 +84,14 @@
       "functionName": "goto"
     },
     {
+      "type": "invoke-function-instruction",
+      "functionName": "getResponse"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
       "type": "push-string-instruction",
       "value": "Greetings, captain "
     },
@@ -93,7 +101,7 @@
     },
     {
       "type": "invoke-function-instruction",
-      "functionName": "_getCaptainName"
+      "functionName": "getCaptainName"
     },
     {
       "type": "invoke-function-instruction",
@@ -109,7 +117,7 @@
     },
     {
       "type": "invoke-function-instruction",
-      "functionName": "_getShipName"
+      "functionName": "getShipName"
     },
     {
       "type": "invoke-function-instruction",
@@ -2377,22 +2385,24 @@
     }
   ],
   "labelMap": {
-    "init": 20,
-    "init__options": 30,
-    "what_happen": 84,
-    "what_happen__options": 86,
-    "now_what": 159,
-    "now_what__options": 159,
-    "about_hamsters": 305,
-    "about_hamsters__options": 305,
-    "awesome_hamsters": 343,
-    "awesome_hamsters__options": 345,
-    "bad_hamsters": 456,
-    "bad_hamsters__options": 456,
-    "humsters_are_hamsters": 561,
-    "humsters_are_hamsters__options": 561,
-    "goodbye": 580,
-    "goodbye__options": 580
+    "__doc": 20,
+    "__doc__options": 20,
+    "init": 22,
+    "init__options": 32,
+    "what_happen": 86,
+    "what_happen__options": 88,
+    "now_what": 161,
+    "now_what__options": 161,
+    "about_hamsters": 307,
+    "about_hamsters__options": 307,
+    "awesome_hamsters": 345,
+    "awesome_hamsters__options": 347,
+    "bad_hamsters": 458,
+    "bad_hamsters__options": 458,
+    "humsters_are_hamsters": 563,
+    "humsters_are_hamsters__options": 563,
+    "goodbye": 582,
+    "goodbye__options": 582
   },
   "programCounter": 0,
   "exit": false,

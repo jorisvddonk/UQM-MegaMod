@@ -74,8 +74,8 @@ replaceWithQuestMarkConversation (LOCDATA *retval)
 	registerForeignFunction(vm, "emit", &emit);
 	registerForeignFunction(vm, "response", &response);
 	registerForeignFunction(vm, "getResponse", &getresponse);
-	registerForeignFunction(vm, "_getCaptainName", &getCaptainName);
-	registerForeignFunction(vm, "_getShipName", &getShipName);
+	registerForeignFunction(vm, "getCaptainName", &getCaptainName);
+	registerForeignFunction(vm, "getShipName", &getShipName);
 	struct json_value_s *root = loadFileGetJSON(vm, "questmark_in.json"); // TODO: load via generic package file loading system
 	struct json_object_s *rootObj = json_value_as_object(root);
 	struct json_array_s *inputProgram = get_object_key_as_array(rootObj, "programList");
