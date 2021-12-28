@@ -164,7 +164,15 @@ void i_concat(TzoVM *vm)
 {
     Value a = _pop(vm);
     Value b = _pop(vm);
-    Value *c = makeString(strcat(asString(a), asString(b)));
+    char* aStr = asString(a);
+    char* bStr = asString(b);
+    size_t len1 = strlen(aStr), len2 = strlen(bStr);
+    char *concat = (char*) malloc(len1 + len2 + 1);
+
+    memcpy(concat, aStr, len1);
+    memcpy(concat+len1, bStr, len2+1);
+
+    Value *c = makeString(concat);
     _push(vm, *c);
 }
 
@@ -172,7 +180,15 @@ void i_rconcat(TzoVM *vm)
 {
     Value a = _pop(vm);
     Value b = _pop(vm);
-    Value *c = makeString(strcat(asString(b), asString(a)));
+    char* aStr = asString(a);
+    char* bStr = asString(b);
+    size_t len1 = strlen(aStr), len2 = strlen(bStr);
+    char *concat = (char*) malloc(len1 + len2 + 1);
+
+    memcpy(concat, bStr, len2);
+    memcpy(concat+len2, aStr, len1+1);
+
+    Value *c = makeString(concat);
     _push(vm, *c);
 }
 
