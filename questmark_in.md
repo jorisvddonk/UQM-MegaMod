@@ -12,7 +12,9 @@
         "bad_details_about_hamsters": 0
       },
       "options": {
-        "no_link_behaviour": "loopback_to_options"
+        "no_link_behaviour": "loopback_to_options",
+        "emit_on": "end_of_line",
+        "strip_leading_newlines": true
       }
     }
 
@@ -25,7 +27,17 @@ npx questmark --input questmark_in.md --output questmark_in.json --no-run
 
 # init
 
-Greetings, captain `getCaptainName emit` of the starship `getShipName emit`! Glad you've finally woken up! You banged your head quite badly there and we were worried that your central processing unit was severely damaged, but it seems that you're fine enough to open your eyes! Wonderful. How do you feel?
+Greetings, captain `getCaptainName rconcat` of the starship `getShipName rconcat`!
+
+Glad you've finally woken up! You banged your head quite badly there and we were worried that your central processing unit was severely damaged, but it seems that you're fine enough to open your eyes! Wonderful. How do you feel?
+
+* Hey, you don't mind giving me some ships, please?
+
+`4 3 addEscortShips dup dup jgz {`
+Sure, captain! Added `concat` Pkunk vessels to your fleet!
+`} jz {`
+`pop` Looks like your fleet is already full and there's no slots left!
+`}`
 
 * `@once` Uuuuh... "central processing unit"?
 
@@ -129,14 +141,9 @@ We have a fuzzy tail!
 * `@once` `"details_about_hamsters" getContext 3 eq` [Hamsters are great at running in wheels](#humsters_are_hamsters)
 
 WE ARE GREAT AT RUNNING IN WHEELS!
-
 Wow, Human! It seems that we just discovered something AWESOME.
-
-WE.
-ARE.
-HAMSTERS!
+WE. ARE. HAMSTERS!
 Not Humsters!
-
 Wow!
 
 # bad_hamsters

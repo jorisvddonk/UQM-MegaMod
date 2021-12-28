@@ -93,11 +93,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Greetings, captain "
-    },
-    {
-      "type": "invoke-function-instruction",
-      "functionName": "emit"
+      "value": "Greetings, captain ",
+      "comment": "Greetings, captain "
     },
     {
       "type": "invoke-function-instruction",
@@ -105,15 +102,12 @@
     },
     {
       "type": "invoke-function-instruction",
-      "functionName": "emit"
+      "functionName": "rconcat"
     },
     {
       "type": "push-string-instruction",
-      "value": " of the starship "
-    },
-    {
-      "type": "invoke-function-instruction",
-      "functionName": "emit"
+      "value": " of the starship ",
+      "comment": " of the starship "
     },
     {
       "type": "invoke-function-instruction",
@@ -121,15 +115,148 @@
     },
     {
       "type": "invoke-function-instruction",
-      "functionName": "emit"
+      "functionName": "rconcat"
     },
     {
       "type": "push-string-instruction",
-      "value": "! Glad you've finally woken up! You banged your head quite badly there and we were worried that your central processing unit was severely damaged, but it seems that you're fine enough to open your eyes! Wonderful. How do you feel?\n\n"
+      "value": "!\n\n",
+      "comment": "!"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Glad you've finally woken up! You banged your head quite badly there and we were worried that your central processing unit was severely damaged, but it seems that you're fine enough to open your eyes! Wonderful. How do you feel?\n\n",
+      "comment": "Glad you've finally woken up! You banged your head quite badly there and we were worried that your central processing unit was severely damaged, but it seems that you're fine enough to open your eyes! Wonderful. How do you feel?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "rconcat"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "rconcat"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "rconcat"
     },
     {
       "type": "invoke-function-instruction",
       "functionName": "emit"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Hey, you don't mind giving me some ships, please?"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "ppc"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "+"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 4
+    },
+    {
+      "type": "push-number-instruction",
+      "value": 3
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "addEscortShips"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "dup"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "dup"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jgz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "Sure, captain! Added ",
+      "comment": "\nSure, captain! Added "
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "concat"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": " Pkunk vessels to your fleet!\n",
+      "comment": " Pkunk vessels to your fleet!\n"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "rconcat"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "jz"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "{"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "pop"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": " Looks like your fleet is already full and there's no slots left!\n",
+      "comment": " Looks like your fleet is already full and there's no slots left!\n"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "push-string-instruction",
+      "value": "init__options"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "}"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "response"
     },
     {
       "type": "push-string-instruction",
@@ -181,7 +308,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Oh! Right, sorry. \"brain\" you call it, I think. Funny word. Sounds almost fake, if you ask me."
+      "value": "Oh! Right, sorry. \"brain\" you call it, I think. Funny word. Sounds almost fake, if you ask me.",
+      "comment": "Oh! Right, sorry. \"brain\" you call it, I think. Funny word. Sounds almost fake, if you ask me."
     },
     {
       "type": "invoke-function-instruction",
@@ -269,7 +397,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Ah, those are a private matter to us. Please don't ask about our glowy bits ever again, thanks."
+      "value": "Ah, those are a private matter to us. Please don't ask about our glowy bits ever again, thanks.",
+      "comment": "Ah, those are a private matter to us. Please don't ask about our glowy bits ever again, thanks."
     },
     {
       "type": "invoke-function-instruction",
@@ -349,7 +478,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Well, we were zipping around space in our awesome spaceship, when we randomly stumbled upon your nice planet.\nOur pilot figured it'd be great to land on your world, and we did!\nOr, well, we tried to.\nSee, the thing is, our spaceship is rather difficult to control in atmospheres as thick as around your world.\n..and... well...\nWe happened to accidentally veer widely off course and land RIGHT on top of your parked spaceship.\nSorry about that!\n\n"
+      "value": "Well, we were zipping around space in our awesome spaceship, when we randomly stumbled upon your nice planet.\nOur pilot figured it'd be great to land on your world, and we did!\nOr, well, we tried to.\nSee, the thing is, our spaceship is rather difficult to control in atmospheres as thick as around your world.\n..and... well...\nWe happened to accidentally veer widely off course and land RIGHT on top of your parked spaceship.\nSorry about that!\n\n",
+      "comment": "Well, we were zipping around space in our awesome spaceship, when we randomly stumbled upon your nice planet.\nOur pilot figured it'd be great to land on your world, and we did!\nOr, well, we tried to.\nSee, the thing is, our spaceship is rather difficult to control in atmospheres as thick as around your world.\n..and... well...\nWe happened to accidentally veer widely off course and land RIGHT on top of your parked spaceship.\nSorry about that!"
     },
     {
       "type": "invoke-function-instruction",
@@ -413,7 +543,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "\"Car\"? Is that what you call spaceships?"
+      "value": "\"Car\"? Is that what you call spaceships?",
+      "comment": "\"Car\"? Is that what you call spaceships?"
     },
     {
       "type": "invoke-function-instruction",
@@ -497,7 +628,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "You don't have spaceships!? Wow! How do you people even get to space?"
+      "value": "You don't have spaceships!? Wow! How do you people even get to space?",
+      "comment": "You don't have spaceships!? Wow! How do you people even get to space?"
     },
     {
       "type": "invoke-function-instruction",
@@ -569,7 +701,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Oh, I see this bothers you.\n"
+      "value": "Oh, I see this bothers you.\n",
+      "comment": "Oh, I see this bothers you.\n"
     },
     {
       "type": "invoke-function-instruction",
@@ -593,7 +726,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "\nJust like our glowy bits bother us when you ask about it.\n"
+      "value": "Just like our glowy bits bother us when you ask about it.\n",
+      "comment": "\nJust like our glowy bits bother us when you ask about it.\n"
     },
     {
       "type": "invoke-function-instruction",
@@ -605,7 +739,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "\nWe won't mention cars again. Sorry."
+      "value": "We won't mention cars again. Sorry.",
+      "comment": "\nWe won't mention cars again. Sorry."
     },
     {
       "type": "invoke-function-instruction",
@@ -709,7 +844,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "We are the Humsters. We're intergalactical space travellers! Awesome, huh?"
+      "value": "We are the Humsters. We're intergalactical space travellers! Awesome, huh?",
+      "comment": "We are the Humsters. We're intergalactical space travellers! Awesome, huh?"
     },
     {
       "type": "invoke-function-instruction",
@@ -829,7 +965,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Yeah, some other humanoid-like creature gave it to us. We don't really know why."
+      "value": "Yeah, some other humanoid-like creature gave it to us. We don't really know why.",
+      "comment": "Yeah, some other humanoid-like creature gave it to us. We don't really know why."
     },
     {
       "type": "invoke-function-instruction",
@@ -953,7 +1090,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Huh? \"Hamsters\"? That name sounds just like ours... What are \"Hamsters\"? Are they also intergalactical space travellers!? We'd love to get to meet more advanced species that also travel across space!"
+      "value": "Huh? \"Hamsters\"? That name sounds just like ours... What are \"Hamsters\"? Are they also intergalactical space travellers!? We'd love to get to meet more advanced species that also travel across space!",
+      "comment": "Huh? \"Hamsters\"? That name sounds just like ours... What are \"Hamsters\"? Are they also intergalactical space travellers!? We'd love to get to meet more advanced species that also travel across space!"
     },
     {
       "type": "invoke-function-instruction",
@@ -1053,7 +1191,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "We're just travelling and looking for cheese."
+      "value": "We're just travelling and looking for cheese.",
+      "comment": "We're just travelling and looking for cheese."
     },
     {
       "type": "invoke-function-instruction",
@@ -1145,7 +1284,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Yeah, we love cheese!"
+      "value": "Yeah, we love cheese!",
+      "comment": "Yeah, we love cheese!"
     },
     {
       "type": "invoke-function-instruction",
@@ -1197,15 +1337,16 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Goodbye, human!"
-    },
-    {
-      "type": "invoke-function-instruction",
-      "functionName": "emit"
+      "value": "Goodbye, human!",
+      "comment": "Goodbye, human!"
     },
     {
       "type": "invoke-function-instruction",
       "functionName": "exit"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
     },
     {
       "type": "push-string-instruction",
@@ -1253,7 +1394,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Wow, they sound amazing!"
+      "value": "Wow, they sound amazing!",
+      "comment": "Wow, they sound amazing!"
     },
     {
       "type": "invoke-function-instruction",
@@ -1349,15 +1491,16 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "What is a watch?\nOh... You are already gone.\nWell, goodbye then."
-    },
-    {
-      "type": "invoke-function-instruction",
-      "functionName": "emit"
+      "value": "What is a watch?\nOh... You are already gone.\nWell, goodbye then.",
+      "comment": "What is a watch?\nOh... You are already gone.\nWell, goodbye then."
     },
     {
       "type": "invoke-function-instruction",
       "functionName": "exit"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
     },
     {
       "type": "push-string-instruction",
@@ -1385,7 +1528,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Can you tell us more about hamsters please?\n\n"
+      "value": "Can you tell us more about hamsters please?\n\n",
+      "comment": "Can you tell us more about hamsters please?"
     },
     {
       "type": "invoke-function-instruction",
@@ -1465,7 +1609,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "We have soft hair!"
+      "value": "We have soft hair!",
+      "comment": "We have soft hair!"
     },
     {
       "type": "invoke-function-instruction",
@@ -1565,7 +1710,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "We have cute eyes!"
+      "value": "We have cute eyes!",
+      "comment": "We have cute eyes!"
     },
     {
       "type": "invoke-function-instruction",
@@ -1665,7 +1811,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "We have a fuzzy tail!"
+      "value": "We have a fuzzy tail!",
+      "comment": "We have a fuzzy tail!"
     },
     {
       "type": "invoke-function-instruction",
@@ -1765,31 +1912,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "WE ARE GREAT AT RUNNING IN WHEELS!"
-    },
-    {
-      "type": "invoke-function-instruction",
-      "functionName": "emit"
-    },
-    {
-      "type": "push-string-instruction",
-      "value": "Wow, Human! It seems that we just discovered something AWESOME."
-    },
-    {
-      "type": "invoke-function-instruction",
-      "functionName": "emit"
-    },
-    {
-      "type": "push-string-instruction",
-      "value": "WE.\nARE.\nHAMSTERS!\nNot Humsters!"
-    },
-    {
-      "type": "invoke-function-instruction",
-      "functionName": "emit"
-    },
-    {
-      "type": "push-string-instruction",
-      "value": "Wow!"
+      "value": "WE ARE GREAT AT RUNNING IN WHEELS!\nWow, Human! It seems that we just discovered something AWESOME.\nWE. ARE. HAMSTERS!\nNot Humsters!\nWow!",
+      "comment": "WE ARE GREAT AT RUNNING IN WHEELS!\nWow, Human! It seems that we just discovered something AWESOME.\nWE. ARE. HAMSTERS!\nNot Humsters!\nWow!"
     },
     {
       "type": "invoke-function-instruction",
@@ -1909,7 +2033,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Are you sure about this?"
+      "value": "Are you sure about this?",
+      "comment": "Are you sure about this?"
     },
     {
       "type": "invoke-function-instruction",
@@ -2009,7 +2134,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Are you sure about this?"
+      "value": "Are you sure about this?",
+      "comment": "Are you sure about this?"
     },
     {
       "type": "invoke-function-instruction",
@@ -2109,7 +2235,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Are you sure about this?"
+      "value": "Are you sure about this?",
+      "comment": "Are you sure about this?"
     },
     {
       "type": "invoke-function-instruction",
@@ -2209,7 +2336,8 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Wow, I'm sure!"
+      "value": "Wow, I'm sure!",
+      "comment": "Wow, I'm sure!"
     },
     {
       "type": "invoke-function-instruction",
@@ -2277,27 +2405,18 @@
     },
     {
       "type": "push-string-instruction",
-      "value": "Sure is! I'm glad we managed to figure that out, Human!"
-    },
-    {
-      "type": "invoke-function-instruction",
-      "functionName": "emit"
+      "value": "Sure is! I'm glad we managed to figure that out, Human!",
+      "comment": "Sure is! I'm glad we managed to figure that out, Human!"
     },
     {
       "type": "push-string-instruction",
-      "value": "Now, it seems that it is time for us to run around in a hamster wheel."
-    },
-    {
-      "type": "invoke-function-instruction",
-      "functionName": "emit"
+      "value": "Now, it seems that it is time for us to run around in a hamster wheel.",
+      "comment": "Now, it seems that it is time for us to run around in a hamster wheel."
     },
     {
       "type": "push-string-instruction",
-      "value": "Goodbye, human!"
-    },
-    {
-      "type": "invoke-function-instruction",
-      "functionName": "emit"
+      "value": "Goodbye, human!",
+      "comment": "Goodbye, human!"
     },
     {
       "type": "push-string-instruction",
@@ -2306,6 +2425,18 @@
     {
       "type": "invoke-function-instruction",
       "functionName": "goto"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "rconcat"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "rconcat"
+    },
+    {
+      "type": "invoke-function-instruction",
+      "functionName": "emit"
     },
     {
       "type": "push-string-instruction",
@@ -2388,21 +2519,21 @@
     "__doc": 20,
     "__doc__options": 20,
     "init": 22,
-    "init__options": 32,
-    "what_happen": 86,
-    "what_happen__options": 88,
-    "now_what": 161,
-    "now_what__options": 161,
-    "about_hamsters": 307,
-    "about_hamsters__options": 307,
-    "awesome_hamsters": 345,
-    "awesome_hamsters__options": 347,
-    "bad_hamsters": 458,
-    "bad_hamsters__options": 458,
-    "humsters_are_hamsters": 563,
-    "humsters_are_hamsters__options": 563,
-    "goodbye": 582,
-    "goodbye__options": 582
+    "init__options": 34,
+    "what_happen": 116,
+    "what_happen__options": 118,
+    "now_what": 191,
+    "now_what__options": 191,
+    "about_hamsters": 337,
+    "about_hamsters__options": 337,
+    "awesome_hamsters": 375,
+    "awesome_hamsters__options": 377,
+    "bad_hamsters": 482,
+    "bad_hamsters__options": 482,
+    "humsters_are_hamsters": 587,
+    "humsters_are_hamsters__options": 587,
+    "goodbye": 606,
+    "goodbye__options": 606
   },
   "programCounter": 0,
   "exit": false,
