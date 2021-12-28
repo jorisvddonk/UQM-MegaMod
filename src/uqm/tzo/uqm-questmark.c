@@ -6,19 +6,24 @@
 #include "uqm/commglue.h"
 #include "uqm/resinst.h"
 #include "uqm/globdata.h"
+#include "uqm/build.h"
 
 static TzoVM *vm;
 
 void emit(TzoVM *vm)
 {
 	char *str = asString(_pop(vm));
-	printf("%s ", str);
+	printf("\n[%s]\n", str);
+	fflush(stdout);
 	char* clip = "MISSING.ogg";
 	SpliceTrack(clip, str, NULL, NULL);
 }
 
 void getresponse(TzoVM *vm)
 {
+	char* str = "\n";
+	char* clip = "MISSING.ogg";
+	SpliceTrack(clip, str, NULL, NULL);
 	tzo_pause(vm);
 	// actual response handling done by main game engine!
 }
@@ -42,11 +47,21 @@ void getShipName(TzoVM *vm)
 	_push(vm, *makeString(GLOBAL_SIS (ShipName)));
 }
 
+void addEscortShips(TzoVM *vm)
+{
+	Value a = _pop(vm); // number
+	Value b = _pop(vm); // number
+	COUNT numShips = a.number_value;
+	COUNT raceID = b.number_value;
+	COUNT numShipsAdded = AddEscortShips(raceID, numShips);
+	_push(vm, *makeNumber(numShipsAdded));
+}
+
 static void
 ResponseHandler (RESPONSE_REF R)
 {
 	_push(vm, *makeNumber(R));
-	char* asd = "\n";
+	char* asd = "";
 	char* clip = "MISSING.ogg";
 	SpliceTrack(clip, asd, NULL, NULL);
 	tzo_run(vm);
@@ -55,7 +70,7 @@ ResponseHandler (RESPONSE_REF R)
 static void
 TzoIntro (void)
 {
-	char* asd = "\n";
+	char* asd = "";
 	char* clip = "MISSING.ogg";
 	SpliceTrack(clip, asd, NULL, NULL);
 	tzo_run(vm);
@@ -76,6 +91,7 @@ replaceWithQuestMarkConversation (LOCDATA *retval)
 	registerForeignFunction(vm, "getResponse", &getresponse);
 	registerForeignFunction(vm, "getCaptainName", &getCaptainName);
 	registerForeignFunction(vm, "getShipName", &getShipName);
+	registerForeignFunction(vm, "addEscortShips", &addEscortShips);
 	struct json_value_s *root = loadFileGetJSON(vm, "questmark_in.json"); // TODO: load via generic package file loading system
 	struct json_object_s *rootObj = json_value_as_object(root);
 	struct json_array_s *inputProgram = get_object_key_as_array(rootObj, "programList");
